@@ -1,0 +1,5 @@
+{
+    "sketch": "moc.ino",
+    "output": "build",
+    "board": "arduino:avr:megaADK"
+}
