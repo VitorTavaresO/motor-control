@@ -1,6 +1,0 @@
-#line 1 "C:\\Codes\\motor-control\\moc\\.vscode\\arduino.json"
-{
-    "sketch": "moc.ino",
-    "output": "build",
-    "board": "arduino:avr:megaADK"
-}
