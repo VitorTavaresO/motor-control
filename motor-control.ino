@@ -1,13 +1,15 @@
 #define PIN A0
 
+#include "functions.h"
+
 void setup()
 {
-	Serial.begin(115200);
-    pinMode(INPUT, INPUT);
+    Serial.begin(115200);
+    rfid_start();
+    Serial.println(F("Aproxime um cartão RFID para leitura."));
 }
 
 void loop()
 {
-    Serial.println(analogRead(PIN));
-    delay(1000);
+    rfid_read();
 }
