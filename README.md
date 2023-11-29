@@ -1,2 +1,2 @@
 # motor-control
-A system to control temperature sensor, gas sensor, oil sensor, and others using Arduino Mega ADK.
+A system to control motor temperature sensor, fuel level sensor, motor oil sensor, and others using Arduino Mega ADK.
