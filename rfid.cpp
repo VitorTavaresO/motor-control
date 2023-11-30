@@ -3,9 +3,6 @@
 
 #include "functions.h"
 
-#define RST_PIN 5
-#define SS_PIN 10
-
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 MFRC522::MIFARE_Key key;
 
