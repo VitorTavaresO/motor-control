@@ -16,4 +16,5 @@ void setup()
 void loop()
 {
     rfid_read();
+    temperature_read();
 }
