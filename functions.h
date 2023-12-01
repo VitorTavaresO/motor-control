@@ -7,4 +7,6 @@ void rfid_read();
 
 void rfid_write();
 
+uint16_t temperature_read();
+
 #endif
