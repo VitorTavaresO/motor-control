@@ -7,3 +7,5 @@ This system is part of the Embedded and IoT, using Arduino Mega ADK  which haves
 - Oil Temperature
 - Motor RPM
 - ...
+
+All interactions with this system will be inside on a Raspberry Pi using the Yocto Project to create a OS that allows touch screen control.
