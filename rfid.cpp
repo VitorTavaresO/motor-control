@@ -1,7 +1,9 @@
 #include <SPI.h>
 #include <MFRC522.h>
+#include <Arduino.h>
 
 #include "functions.h"
+
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 MFRC522::MIFARE_Key key;
