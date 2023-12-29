@@ -3,6 +3,7 @@
 #include <Arduino.h>
 
 #include "functions.h"
+#include "const.h"
 
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);

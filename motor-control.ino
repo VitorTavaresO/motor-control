@@ -1,9 +1,5 @@
 #include "functions.h"
-
-#define TEMPERATURE_SENSOR_PIN A0
-#define RST_PIN 5
-#define SS_PIN 10
-
+#include "const.h"
 
 void setup()
 {
