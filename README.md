@@ -8,4 +8,4 @@ This system is part of the Embedded and IoT, using Arduino Mega ADK  which haves
 - Motor RPM
 - ...
 
-All interactions with this system will be inside on a Raspberry Pi using the Yocto Project to create a OS that allows touch screen control.
+All interactions with this system will be linked to a Raspberry Pi that will have a display created using the framework for Python Kivy and KivyMD.
