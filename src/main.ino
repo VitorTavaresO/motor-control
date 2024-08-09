@@ -1,8 +1,14 @@
 #include <Arduino.h>
+#include <const.h>
 
 void setup()
 {
-    Serial.begin(115200);
+    pinMode(TEMPERATURE_PIN, INPUT);
+    pinMode(FUEL_PIN, INPUT);
+    pinMode(OIL_TEMPERATURE_PIN, INPUT);
+    pinMode(MOTOR_RPM, INPUT);
+    pinMode(BATTERY_VOLTAGE, INPUT);
+    Serial.begin(SerialRasp);
 }
 void loop()
 {
