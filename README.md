@@ -6,6 +6,7 @@ This system is part of the Embedded and IoT, using Arduino Mega ADK which haves 
 - Fuel Level
 - Oil Temperature
 - Motor RPM
+- Battery
 - ...
 
 ## Interaction
