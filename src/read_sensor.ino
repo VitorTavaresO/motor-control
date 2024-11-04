@@ -8,12 +8,12 @@ uint8_t read_motor_temperature()
 
 uint8_t read_fuel()
 {
-    return map(analogRead(FUEL_PIN), 0, 1023, 0, 255);
+    return map(analogRead(FUEL_PIN), 0, 1023, 0, FUEL_MAX);
 }
 
-uint8_t read_oil_temperature()
+uint8_t read_oil_pression()
 {
-    return map(analogRead(OIL_TEMPERATURE_PIN), 0, 1023, 0, 58);
+    return map(analogRead(OIL_TEMPERATURE_PIN), 0, 1023, 0, 1);
 }
 
 uint8_t read_motor_rpm()
