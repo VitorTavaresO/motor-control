@@ -1,5 +1,4 @@
-#include <Arduino.h>
-#include <HardwareSerial.h>
+#include <write_rasp.h>
 
 bool write_rasp(uint8_t *data, uint8_t size)
 {

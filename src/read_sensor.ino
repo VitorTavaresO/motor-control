@@ -1,9 +1,9 @@
-#include <Arduino.h>
 #include <const.h>
+#include <read_sensor.h>
 
 uint8_t read_motor_temperature()
 {
-    return map(analogRead(TEMPERATURE_PIN), 0, 1023, 0, 255);
+    return map(analogRead(TEMPERATURE_PIN), 0, TEMPERATURE_MAX, 120, 0);
 }
 
 uint8_t read_fuel()

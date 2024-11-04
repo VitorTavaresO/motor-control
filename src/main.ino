@@ -1,15 +1,16 @@
-#include <Arduino.h>
-#include <HardwareSerial.h>
 #include <const.h>
+#include <read_sensor.h>
+#include <write_rasp.h>
 
 void setup()
 {
     pinMode(TEMPERATURE_PIN, INPUT);
     pinMode(FUEL_PIN, INPUT);
     pinMode(OIL_TEMPERATURE_PIN, INPUT);
-    pinMode(MOTOR_RPM, INPUT);
-    pinMode(BATTERY_VOLTAGE, INPUT);
-    Serial.begin(SerialRasp);
+    pinMode(MOTOR_RPM_PIN, INPUT);
+    pinMode(BATTERY_VOLTAGE_PIN, INPUT);
+    // Serial.begin(SerialRasp);
+    Serial.begin(SerialDebug);
 }
 void loop()
 {
@@ -21,6 +22,8 @@ void loop()
         read_motor_rpm(),
         read_battery_voltage()};
 
+    Serial.println("Hello World!");
+
     write_rasp(data, 5);
-    delay(1000);
+    delay(5000);
 }
