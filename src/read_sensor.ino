@@ -3,7 +3,7 @@
 
 uint8_t read_motor_temperature()
 {
-    return map(analogRead(TEMPERATURE_PIN), 0, TEMPERATURE_MAX, 120, 0);
+    return map(analogRead(TEMPERATURE_PIN), 0, 690, TEMPERATURE_MAX, 0);
 }
 
 uint8_t read_fuel()
@@ -13,7 +13,7 @@ uint8_t read_fuel()
 
 uint8_t read_oil_pression()
 {
-    return map(analogRead(OIL_TEMPERATURE_PIN), 0, 1023, 0, 1);
+    return map(analogRead(OIL_PRESSION_PIN), 0, 1023, 0, 1);
 }
 
 uint8_t read_motor_rpm()
