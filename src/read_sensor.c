@@ -18,10 +18,10 @@ uint8_t read_oil_temperature()
 
 uint8_t read_motor_rpm()
 {
-    return map(analogRead(MOTOR_RPM), 0, 1023, 0, 5800);
+    return map(analogRead(MOTOR_RPM_PIN), 0, 1023, 0, 5800);
 }
 
 uint8_t read_battery_voltage()
 {
-    return map(analogRead(BATTERY_VOLTAGE), 0, 1023, 0, 100);
+    return map(analogRead(BATTERY_VOLTAGE_PIN), 0, 1023, 0, 100);
 }
